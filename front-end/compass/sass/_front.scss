@@ -1,0 +1,74 @@
+#betterWay{
+	margin-top:155px;
+	height: 150px;
+	background-image: url('../css/images/coffee-images/coffee.jpg');
+	padding: 20px;
+	padding-left: 50px;
+	color:black;
+}
+#how-it-works{
+	border-top: 1px solid black;
+	height: 45px;
+	h1{
+		margin-top: 0px;
+		color: #284741;
+	}
+}
+#stepOne{
+	position: relative;
+	color: white;
+	background-image: url('../css/images/coffee-images/CoffeeBags.jpg');
+	height: 300px;
+	padding: 20px;
+	padding-left: 50px;
+}
+#stepTwo{
+	position: relative;
+	height: 300px;
+	background-color: beige;
+	padding: 20px;
+	padding-left: 50px;
+		#farmer{
+			margin-left: 60px;
+			background-position: center;
+	    	height: 86%;
+    		width: 25%;
+			background-image: url('../css/images/coffee-images/grower.jpg');
+			border: 15px solid #fff;
+	    	transform: rotate(-17deg);
+		}
+		#farmer-text{
+			margin-left: 30px;
+		}
+}
+#stepThree{
+	background-color: black;
+	height: 300px;
+	padding: 30px;
+	color: white;;
+	padding: 20px;
+	padding-left: 50px;
+		#cupImage{
+			    height: 100%;
+			    width:43%;
+			    background-position: center;			
+			    background-image: url('../css/images/coffee-images/cupSteam.jpg');
+		}
+
+}
+#get-started{
+	top:20px;
+		button{
+		color: white;
+		background-color: #284741;
+	}
+}
+#arrow-down {
+    margin-left: 48.5%;
+	width: 0;
+	height: 40px;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid black;
+}
+

@@ -1,0 +1,22 @@
+extends layout
+include header
+block content
+	.container-fluid.options					
+		.row.col-sm-12
+			ul.steps-bar
+				li.home-tag
+					a(href='/')
+						div.home-img
+						p 1. HOME
+				li.options-tag
+					a(href='/options')
+						img(src="../images/coffee-images/menu-steps.png")
+					p 2. OPTIONS
+				li.delivery-tag
+					a(href='/delivery')
+						img(src="../images/coffee-images/menu-steps.png")
+					p 3. DELIVERY
+				li.payment-tag
+					a(href='/payment')
+						img(src="../images/coffee-images/menu-steps.png")
+					p 4. PAYMENT

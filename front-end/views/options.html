@@ -1,0 +1,150 @@
+<div id="steps-wrapper" class="container-fluid beige">
+	<div class="row one col-sm-12 text-center">
+		<ul id="step-bar" class="col-sm-12 text-center"> 
+			<li class="col-sm-3">
+				<a href='#/'>		
+					<div id="home"></div>
+					<h4> 1. HOME </h4>
+				</a>
+			</li>
+			<li class="col-sm-3">
+				<a href='#/options'>		
+					<div id="options"></div>
+					<h4> 2. OPTIONS </h4>
+				</a>
+			</li>
+			<li class="col-sm-3">
+				<a href='#/delivery'>		
+					<div id="delivery" class="col-sm-3"></div>
+					<h4> 3. DELIVERY </h4>
+				</a>
+			</li>
+			<li class="col-sm-3">
+				<a href='#/checkout'>		
+					<div id="checkout"></div>
+					<h4> 4. CHECKOUT </h4>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="row col-sm-12 text-center">
+		<div id="options-header">
+			<h1>What would you like?</h1>
+			<h4>Shipping is free and you can skip any week.</h4>
+		</div>
+	</div>
+
+	<div class="row">
+		<form id="options-form1" ng-submit="optionsForm('Individual')">
+			<div id="individual-plan" class="col-sm-4 col-sm-offset-1 text-center">
+				<h1>Individual Plan</h1>
+				<img src="../css/images/coffee-images/solodrinker.jpg">
+				<h5>Cups per week: 14</h5>
+				<h5>Price per cup: $.50</h5>
+				<h5>Weekly total: $7.00</h5>
+				<h5 class="grind">Grind type:
+					<select ng-model="grind" ng-value='' class="form-control">
+						<option></option>
+						<option>Very Fine</option>
+						<option>Fine</option>
+						<option>Medium</option>
+						<option>Coarse</option>
+						<option>Very Coarse</option>
+					</select>
+				</h5>
+				<button class='btn btn-primary' type="submit" class="btn btn-default">Submit</button>
+				<h4>Shipping is always free</p>
+				<h4>Skip any week. Cancel anytime</p>
+			</div>
+		</form>
+		<form id="options-form2" ng-submit="optionsForm('Family')">
+			<div id="family-plan" class="col-sm-4 col-sm-offset-2 text-center">
+				<h1>Family Plan</h1>
+				<img src="../css/images/coffee-images/coffeedrinkers.jpg">
+				<h5>Cups per week: 40</h5>
+				<h5>Price per cup: $.45</h5>
+				<h5>Weekly total: $18.00</h5>
+				<h5 class="grind">Grind type:
+					<select ng-model="grind" class="form-control" ng-value=''>
+						<option></option>
+						<option>Very Fine</option>
+						<option>Fine</option>
+						<option>Medium</option>
+						<option>Coarse</option>
+						<option>Very Coarse</option>
+					</select>
+				</h5>
+				<button class='btn btn-primary'type="submit" class="btn btn-default">Submit</button>
+				<h4>Shipping is always free</p>
+				<h4>Skip any week. Cancel anytime</p>
+			</div>
+		</form>
+	</div>	
+
+	<div id="custom-header" class="row col-sm-12 text-center">
+		<h1>Prefer to buy in bulk?</h1>
+		<h4>No problem. We can customize your order.  See below.</h4>
+	</div>
+	<div id="customOrderForm" class="row col-sm-10 col-sm-offset-1 text-center">
+			<form id="options-form3" ng-submit="optionsForm('Custom')">
+				<div class="col-sm-10 col-sm-offset-1 type">
+					<div class='col-sm-6'>
+						<img src="../css/images/coffee-images/calendar.png">
+					</div>
+					<div class='col-sm-6'>
+						<h2>1. FREQUENCY </h2>
+						<h5>How often would you like us to send you your coffee?</h5>
+						<select ng-model="frequency" class="form-control" ng-value=''>
+							<option></option>
+							<option>Daily</option>
+							<option>Weekly</option>
+							<option>Bi-Weekly</option>
+							<option>Monthly</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-sm-10 col-sm-offset-1 type">
+					<div class='col-sm-6'>
+						<img src="../css/images/coffee-images/food-scale.png">
+					</div>
+					<div class='col-sm-6'>
+						<h2>2. Quantity </h2>
+						<h5>How many <em>pounds</em> would you like on each delivery?</h5>
+						<h5>$5.00/lb</h5>
+						<select ng-model="quantity" class="form-control" ng-value=''>
+							<option>5</option>
+							<option>10</option>
+							<option>15</option>
+							<option>25</option>
+							<option>50</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-sm-10 col-sm-offset-1 type">
+					<div class='col-sm-6'>
+						<img src="../css/images/coffee-images/beans.png">
+					</div>
+					<div class='col-sm-6'>
+						<h2>3. GRIND TYPE </h2>
+						<h5>How do you like your grinds?</h5>
+						<select ng-model="grind" class="form-control" ng-value=''>
+							<option></option>
+							<option>Very Fine</option>
+							<option>Fine</option>
+							<option>Medium</option>
+							<option>Coarse</option>
+							<option>Very Coarse</option>
+						</select>
+					</div>
+				</div>
+				<div class='col-sm-10 col-sm-offset-1 text-center'>
+					<button class='btn btn-primary' type="submit" class="btn btn-default">Submit</button>
+					<h4>Shipping is always free</p>
+					<h4>Skip any week. Cancel anytime</p>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+

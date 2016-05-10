@@ -1,0 +1,15 @@
+nav.navbar.navbar-default.navbar-fixed-top
+	.container.col-sm-12
+		.col-sm-9.text-left
+			a(href='/')
+				img(src='../images/dc_roasters.png')
+		.col-sm-6
+			if page == "register"
+				h1.contrast You are on the registration page
+				a(href="/login")
+					button.btn.btn-primary(type="submit") LOGIN
+			if page != '/register'
+				a(href="/register")
+					button.btn.btn-primary(type="submit") REGISTER
+			if username 
+				p.contrast Welcome #{username}

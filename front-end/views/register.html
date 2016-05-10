@@ -1,0 +1,42 @@
+<div class="container-fluid registration">
+	<div class="row">
+		<div class="col-sm-12 text-center">
+			<h1> Welcome to DC Roasters!</h1>
+			<h4> Please complete registration below:</h4>
+		</div>
+	</div>
+
+	<div class="row"> 
+		<div class="col-sm-4 col-sm-offset-4 registration-wrapper text-center">
+			<form role="form" ng-submit="registerForm();" id="registration-form" ng-model="registration">
+				<h2 class="warning">{{errorMessage}}</h2>
+
+				<div class="form-group">
+					<label>Username:</label>
+						<input class="form-control" type="text" ng-model="username" placeholder="Your name here" minlength="5">
+				</div>
+
+				<div class="form-group">
+					<label>Password:</label>
+						<input class="form-control" type="password" ng-model="password" placeholder="Minimum length of six characters" minlength="6">
+				</div>
+
+				<div class="form-group">
+					<label>Confirm Password:</label>
+						<input class="form-control" type="password" ng-model="password2" placeholder="Please confirm your password" minlength="6">
+				</div>
+
+				<div class="form-group">
+					<label>Email:</label>
+						<input class="form-control" type="email" ng-model="email" placeholder="email@mail.com" minlength="5">
+				</div>
+						<div class="button-holder">
+            		<button class="btn btn-success" type="submit">Register</button>
+        		</div>
+        	</form>
+
+
+          </div>
+		</div>
+	</div>
+</div>

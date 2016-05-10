@@ -1,0 +1,152 @@
+/* line 1, ../../compass/sass/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 4, ../../compass/sass/_base.scss */
+.footer {
+  background-color: gray;
+  height: 200px;
+}
+/* line 7, ../../compass/sass/_base.scss */
+.footer img {
+  padding: 10px;
+  padding-top: 20px;
+}
+
+/* line 12, ../../compass/sass/_base.scss */
+.registration {
+  margin-top: 200px;
+}
+
+/* line 1, ../../compass/sass/_home.scss */
+.navbar {
+  background-color: #284741;
+}
+/* line 3, ../../compass/sass/_home.scss */
+.navbar img {
+  padding: 15px;
+}
+
+/* line 8, ../../compass/sass/_home.scss */
+.betterWay {
+  margin-top: 155px;
+  height: 200px;
+  padding: 30px;
+  color: white;
+  background-color: #8A6D3B;
+}
+
+/* line 15, ../../compass/sass/_home.scss */
+.how-it-works {
+  color: black;
+  font-size: 50px;
+  height: 100px;
+  background-color: #E2D0D0;
+  padding-top: 10px;
+}
+
+/* line 22, ../../compass/sass/_home.scss */
+.arrow-down {
+  position: absolute;
+  margin-left: 48.5%;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #433022;
+}
+
+/* line 31, ../../compass/sass/_home.scss */
+#stepOne {
+  position: relative;
+  color: white;
+  background-image: url("../images/coffee-images/CoffeeBags.jpg");
+  height: 300px;
+  padding: 35px;
+}
+/* line 37, ../../compass/sass/_home.scss */
+#stepOne div {
+  top: 0px;
+}
+
+/* line 41, ../../compass/sass/_home.scss */
+#stepTwo {
+  position: relative;
+  background-color: beige;
+}
+/* line 44, ../../compass/sass/_home.scss */
+#stepTwo #grower {
+  height: 100%;
+  padding: 56px;
+}
+/* line 49, ../../compass/sass/_home.scss */
+#stepTwo img {
+  width: 100%;
+  height: auto;
+  border: 15px solid #fff;
+  transform: rotate(-18deg);
+}
+/* line 55, ../../compass/sass/_home.scss */
+#stepTwo div {
+  top: 0px;
+}
+
+/* line 60, ../../compass/sass/_home.scss */
+#stepThree {
+  position: relative;
+  background-color: black;
+  height: 300px;
+  padding: 35px;
+  color: white;
+  background-repeat: no-repeat;
+}
+/* line 67, ../../compass/sass/_home.scss */
+#stepThree .cupImage {
+  height: 100%;
+}
+
+/* line 73, ../../compass/sass/_home.scss */
+#get-started div {
+  top: 0px;
+  position: relative;
+  border-top: 50px solid black;
+}
+/* line 78, ../../compass/sass/_home.scss */
+#get-started button {
+  background-color: #3C763D;
+  color: white;
+}
+
+/* line 1, ../../compass/sass/_options.scss */
+.container-fluid.options {
+  margin-top: 155px;
+}
+/* line 3, ../../compass/sass/_options.scss */
+.container-fluid.options ul.steps-bar {
+  list-style-type: none;
+}
+/* line 5, ../../compass/sass/_options.scss */
+.container-fluid.options ul.steps-bar li {
+  float: left;
+}
+/* line 8, ../../compass/sass/_options.scss */
+.container-fluid.options ul.steps-bar li p {
+  float: right;
+}
+
+/* line 20, ../../compass/sass/_options.scss */
+div.home-img {
+  width: 65px;
+  height: 65px;
+  background-image: url("../images/coffee-images/menu-steps.png");
+}
+
+/* line 25, ../../compass/sass/_options.scss */
+.options-bar {
+  padding-top: 50px;
+}
+/* line 27, ../../compass/sass/_options.scss */
+.options-bar h4 {
+  color: white;
+}

@@ -1,0 +1,42 @@
+body{
+	height: 100%;
+}
+
+.navbar{
+		background-color: #284741;
+		img{
+			padding: 15px;
+		}
+	}
+
+img{
+	max-width: 100%;
+}
+#action-bar{
+	padding-top: 40px;
+	h4{
+		color: white;
+	}
+	#username{
+	height: 40px;
+	display: inline-block;
+	color: white;
+	background-color: none;
+	}
+	.info{
+		height: 40px;
+		display: inline-block;
+		color: white;
+		background-color: gray;
+		border-radius: 2px;
+	}
+}
+.footer{
+	background-color: gray;
+	height: 150px;
+	width: 100%;
+	img{
+		padding: 25px 0 5px 0;
+		height: 80%;
+	}
+}

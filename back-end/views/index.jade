@@ -1,0 +1,44 @@
+extends layout
+block content
+	.container-fluid
+		.row
+			.col-sm-12.betterWay
+				h1 A better way to grind
+				h4 Freshly roasted coffee beans delivered weekly to your door
+		.row 
+			.col-sm-12.how-it-works.text-center
+				p How It Works
+		.row
+			.col-sm-12.steps#stepOne
+				h3.title 1: We get the coffee
+				p Each bean is hand selected
+				p Each bean is measured for precise size
+				p Each bean is well-cared for
+
+		.row
+			.col-sm-12.steps#stepTwo
+				div.arrow-down
+				.col-sm-3#grower
+					img(src='../images/coffee-images/grower.jpg')
+				.col-sm-9
+					h3.title 2: We pick up the coffee
+					p We place the coffee in bags
+					p Each bag is transported in climate-controlled trucks
+					p Every six hours the bags are rotated to keep the beans uniform and delicious
+		.row
+			.col-sm-12.steps#stepThree
+				.col-sm-6
+					h2.title 3: You drink the coffee
+					p The coffee tastes delicious
+					p You want more coffee
+				.col-sm-3.cupImage
+					img(src='../images/coffee-images/cupSteam.jpg')
+		.row 
+			.col-sm-12.text-center#get-started
+				div.arrow-down
+				a(href="/register")
+					button.btn.btn-primary-large(type="button") GET STARTED
+				h4 Want to know more about us?
+
+				a(href="/about")
+					h4 OUR STORY

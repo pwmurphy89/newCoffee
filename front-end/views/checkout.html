@@ -1,0 +1,75 @@
+<div id="steps-wrapper" class="container-fluid options beige">	
+	<div class="row one col-sm-12 text-center">
+		<ul id="step-bar" class="col-sm-12 text-center"> 
+			<li class="col-sm-3">
+				<a href='#/'>		
+					<div id="home"></div>
+					<h4> 1. HOME </p>
+				</a>
+			</li>
+			<li class="col-sm-3">
+				<a href='#/options'>		
+					<div id="options"></div>
+					<h4> 2. OPTIONS </p>
+				</a>
+			</li>
+			<li class="col-sm-3">
+				<a href='#/delivery'>		
+					<div id="delivery" class="col-sm-3"></div>
+					<h4> 3. DELIVERY </p>
+				</a>
+			</li>
+			<li class="col-sm-3">
+				<a href='#/checkout'>		
+					<div id="checkout"></div>
+					<h4> 4. CHECKOUT </p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="row col-sm-12 text-center">
+		<h1>Checkout</h1>
+		<h4>Please confirm order summary below</h4>
+	</div>
+	<div class="row col-sm-8 col-sm-offset-2 checkoutForm">
+		
+		<div class="col-sm-5">
+			<h2>Choices</h2>
+			<h5>Plan: </h5> <h4>{{planType}}</h4>
+			<h5>Grind: </h5> <h4>{{grind}}</h4>
+			<h5>Frequency:</h5> <h4> {{frequency}}</h4>
+			<h5>Quantity: </h5> <h4>{{quantity}}</h4>
+			<h5>Date: </h5> <h4>{{deliveryDate}}</h4>
+		</div>
+	</div>
+	<div class="row col-sm-8 col-sm-offset-2 checkoutForm">
+		<h2>Delivery Information</h2>
+		<div class="col-sm-5">
+			<h5>Full Name: </h5><h4>{{fullName}}</h4>
+			<h5>Address: </h5> <h4> {{address}}</h4>
+			<h5>Address2: </h5><h4>{{address2}}</h4>
+			<h5>City: </h5> <h4>{{city}}</h4>
+			<h5>State: </h5><h4>{{state}}</h4>
+			<h5>Zip Code: </h5><h4>{{zip}}</h4>
+		</div>
+	</div>
+	<div class="row col-sm-8 col-sm-offset-2 checkoutForm">
+		<h2>Current Charge</h2>
+			<div class="col-sm-5">
+				<h5>Shipping Cost: </h5><h4>$0.00</h4>
+				<h5><em>Total Charge:</em></h5><h4><em>${{totalCharge}}.00</em></h4>
+			</div>
+	</div>
+	<div class="row col-sm-12 text-center">
+		<div id="cancel-button" class="col-sm-2 col-sm-offset-4">
+			<form ng-submit="cancelForm()">
+				<button class="btn btn-danger" type="submit">Cancel Order</button>
+			</form>
+		</div>
+		<div id="checkout-button" class="col-sm-2">
+			<form ng-submit="paymentForm()">
+				<button class="btn btn-success" type="submit">Pay with card</button>
+			</form>
+		</div>
+	</div>
+</div>

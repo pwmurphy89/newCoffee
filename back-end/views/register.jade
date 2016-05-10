@@ -1,0 +1,26 @@
+extends layout
+include header
+block content
+	.container-fluid.registration
+		.row
+			.col-sm-12.text-center
+				h1 Registration
+				h4 Pick a username and password
+		.row 
+			if(failure)
+				h2 Hi #{tempName}! Looks like your passwords don't match.  Please try again.
+			.col-sm-4.registration-wrapper.text-center
+				form(role="form", action="/register",method="post",id="registration-form", name="registration")
+					.form-group
+						label Username:
+						input.form-control(type="test", name="username", placeholder="John Smith", minlength="5")
+					.form-group
+						label Password:
+						input.form-control(type="password", name="password", placeholder="6 min", minlength="6")
+					.form-group
+						input.form-control(type="password", name="password2", placeholder="Confirm Password", minlength="6")
+					.form-group
+						label Email:
+						input.form-control(type="email", name="email", placeholder="example@abc.com")
+					.button-holder
+						button.btn.btn-success(type="submit") Register
