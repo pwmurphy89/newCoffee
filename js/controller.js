@@ -127,25 +127,29 @@ myApp.controller('myController', function($scope, $http, $location, $cookies, $s
 	$scope.optionsForm = function(planType){
 		var frequency;
 		var quantity;
+		var grind;
 		var totalCharge;
 		var thisToken = $cookies.get('token')
 		if(planType == 'Individual'){
 			frequency = 'Weekly';
 			quantity = '14 cups';
+			grind = $scope.indGrind;
 			totalCharge = 7;
 		}else if(planType == 'Family'){
 			frequency = 'Weekly';
 			quantity = '40 cups';
 			totalCharge = 18;
+			grind = $scope.famGrind;
 		}else{
 			frequency = $scope.frequency;
 			quantity = $scope.quantity + 'lbs';
+			grind = $scope.grind;
 			totalCharge = (Number($scope.quantity) * 5) + '.00';
 		}
 		$http.post("http://www.pwmurphy.com:3000/options", {
 			token: $cookies.get('token'),
 			plan: planType,
-			grind: $scope.grind,
+			grind: grind,
 			quantity: quantity,
 			frequency: frequency,
 			totalCharge: totalCharge
