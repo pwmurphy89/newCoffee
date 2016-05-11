@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var mongoUrl = "mongodb://localhost:27017/coffee";
+var mongoUrl = "mongodb://www.pwmurphy.com:27017/coffee";
 var mongoose = require('mongoose');
 mongoose.connect(mongoUrl);
 
