@@ -106,7 +106,7 @@ myApp.controller('myController', function($scope, $http, $location, $cookies, $s
 		if($scope.username==undefined||$scope.password == undefined|| $scope.password2 ==undefined|| $scope.email ==undefined){
 			$scope.errorMessage = "Hi! Please make sure to fill out all the inputs.";
 		}else{
-			$http.post('http://www.pwmurphy.com:3000/register', {
+			$http.post('http://www.localhost:3000/register', {
 				username: $scope.username,
 				password: $scope.password,
 				password2: $scope.password2,
