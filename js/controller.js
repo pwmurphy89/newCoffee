@@ -41,7 +41,6 @@ myApp.controller('myController', function($scope, $http, $location, $cookies, $s
 			}else if (response.data.failure == 'tokenExpired'){
 				timeExpired();
 			}else{
-				console.log("ok");
 				var userOptions = response.data;
 				$scope.username = userOptions.username;
 			}
@@ -79,14 +78,12 @@ myApp.controller('myController', function($scope, $http, $location, $cookies, $s
 	 }
 
 	$scope.loginForm = function(){
-		$http.post('http://www.localhost:3000/login',{
+		$http.post('http://www.pwmurphy.com:3000/login',{
 			username: $scope.username,
 			password: $scope.password
 		}).then(function successCallback(response){
 
 			if(response.data.success == 'found'){
-					console.log("cameback");
-					console.log(response.data.token);
 				$cookies.put('token', response.data.token);
 				$cookies.put('username', $scope.username);
 				$cookies.put('expireTime', response.data.expireTime);
@@ -106,7 +103,7 @@ myApp.controller('myController', function($scope, $http, $location, $cookies, $s
 		if($scope.username==undefined||$scope.password == undefined|| $scope.password2 ==undefined|| $scope.email ==undefined){
 			$scope.errorMessage = "Hi! Please make sure to fill out all the inputs.";
 		}else{
-			$http.post('http://www.localhost:3000/register', {
+			$http.post('http://www.pwmurphy.com:3000/register', {
 				username: $scope.username,
 				password: $scope.password,
 				password2: $scope.password2,
