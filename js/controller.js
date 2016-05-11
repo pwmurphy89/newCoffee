@@ -79,7 +79,7 @@ myApp.controller('myController', function($scope, $http, $location, $cookies, $s
 	 }
 
 	$scope.loginForm = function(){
-		$http.post('http://www.pwmurphy.com:3000/login',{
+		$http.post('http://www.localhost:3000/login',{
 			username: $scope.username,
 			password: $scope.password
 		}).then(function successCallback(response){
